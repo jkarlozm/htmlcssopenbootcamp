@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <!--
+        method get: envia información a traves del navegador
+        method post: envìa información al servidor
+
+        "for:" casa la etiqueta "label" con el "input" por medio del "id="
+    -->
+    
+    <div class="container">
+        <div class="row">
+            <section>
+                <form action="resultados.html" method="get">
+                    <div class="row">
+                        <div class="input-field">
+                            <label for="user">usuario</label>
+                            <!--required hace obligatoria la información-->
+                            <input type="text" id="user" name="user" class="validate" required>
+                        </div>                   
+                    </div>
+                    <div class="row">
+                        <div class="input-field">                            
+                            <input type="password" id="pass" name="password" class="validate">
+                            <label for="pass">contraseña</label>
+                        </div>                        
+                    </div>
+                    <div>
+                        <label for="edad">Edad</label>            
+                        <input type="number" name="edad" id="edad" min="0" max="18" step="2">
+                    </div>
+                    <div>
+                        <label for="nacimiento">Fecha Nacimiento</label>
+                        <input type="date" name="nacimiento" id="nacimiento">
+                    </div>
+                    <div>
+                        <label for="correo">correo</label>
+                        <input type="email" name="correo" id="correo">
+                    </div>
+                    <div>
+                        <label for="comment">comentario</label>
+                        <textarea name="comentario" id="comment" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <button type="reset">LIMPIAR</button>
+                        <button type="submit">ENVIAR</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <section class="section">
+                <table class="highlight centered">
+                    <thead>
+                        <tr>
+                            <th>Participante</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miercoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sábado</th>
+                            <th>Domingo</th>
+                        </tr>
+                    </thead>
+                    <tbody>            
+                        <tr>
+                            <td>Carlos</td>
+                            <td>8:00 am - 05:00 pm</td>
+                            <td>8:00 am - 05:00 pm</td>
+                            <td>8:00 am - 05:00 pm</td>
+                            <td>8:00 am - 05:00 pm</td>
+                            <td>8:00 am - 05:00 pm</td>
+                            <td>Descanso</td>
+                            <td>Descanso</td>
+                        </tr>
+                        <tr>
+                            <td>Juan</td>
+                            <td>Descanso</td>
+                            <td>Descanso</td>
+                            <td>21:00 h - 23:00</td>
+                            <td>21:00 h - 23:00</td>
+                            <td>21:00 h - 23:00</td>
+                            <td>21:00 h - 23:00</td>
+                            <td>Descanso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>        
+    </div>
+      
+    
+</body>
+</html>
