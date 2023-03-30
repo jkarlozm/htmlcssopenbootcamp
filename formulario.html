@@ -34,25 +34,33 @@
                             <label for="pass">contraseña</label>
                         </div>                        
                     </div>
-                    <div>
-                        <label for="edad">Edad</label>            
-                        <input type="number" name="edad" id="edad" min="0" max="18" step="2">
+                    <div class="row">
+                        <div class="input-field">
+                            <label for="edad">Edad</label>            
+                            <input type="number" name="edad" id="edad" min="0" max="18" step="2" class="validate">
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <label for="nacimiento">Fecha Nacimiento</label>
+                            <input type="date" name="nacimiento" id="nacimiento" class="validate">
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <label for="correo">correo</label>
+                            <input type="email" name="correo" id="correo" class="validate">
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="input-field">
+                            <label for="comment">comentario</label>
+                            <textarea name="comentario" id="comment" cols="30" rows="10" class="materialize-textarea"></textarea>
+                        </div>                        
                     </div>
                     <div>
-                        <label for="nacimiento">Fecha Nacimiento</label>
-                        <input type="date" name="nacimiento" id="nacimiento">
-                    </div>
-                    <div>
-                        <label for="correo">correo</label>
-                        <input type="email" name="correo" id="correo">
-                    </div>
-                    <div>
-                        <label for="comment">comentario</label>
-                        <textarea name="comentario" id="comment" cols="30" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <button type="reset">LIMPIAR</button>
-                        <button type="submit">ENVIAR</button>
+                        <button class="waves-effect waves-light btn" type="reset">LIMPIAR</button>
+                        <button class="waves-effect waves-light btn" type="submit">ENVIAR</button>
                     </div>
                 </form>
             </section>
@@ -98,8 +106,8 @@
                 </table>
             </section>
         </div>        
-    </div>
-      
-    
+    </div>  
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
